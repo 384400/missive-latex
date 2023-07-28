@@ -1,0 +1,53 @@
+\documentclass[policeTaille=12pt]{missive}
+
+\input{variables.tex}
+
+\usepackage{lipsum}
+\begin{document}
+
+	\Paginer{}
+	
+	\Plier{}
+
+
+	\Preparer
+		{
+			\expediteur
+			
+		}
+		{
+			Madame Marie CURIE
+			
+			21, rue de l'École de Médecine
+			
+			75006 PARIS
+			
+		}
+		{\lieu}
+		{}
+	
+	
+	Madame,
+	
+
+	\lipsum[1-3]
+	
+	\sauter
+	
+	\lipsum[4-5]
+	
+	\SignerGraphiquement{\signatureGraphique}
+	
+	\SignerTextuellement{\signatureTextuelle}
+	
+	\Ajouter{\addenda}{document A}
+	\Ajouter{\addenda}{document B}
+
+	\Joindre{\addenda}
+	
+	\RedigerNotaBene{Nous ne ressentons pas assez, et pensons trop.}
+
+	\RedigerPostScriptum{La vieillesse. C’est la seule maladie dont on ne peut espérer guérir.}
+
+	
+\end{document}
